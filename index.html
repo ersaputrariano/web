@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <title>ERSA PUTRA RIANO</title>
+  </head>
+  <body>
+    <style>
+      .header { background-color: #f01818; box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25); display: flex; justify-content: space-between; padding: 8px 80px 8px 35px; width: 100%; }
+      .logo-container { display: flex; gap: 20px; align-items: center; }
+      .logo { aspect-ratio: 0.93; width: 53px; box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25); }
+      .team-name { color: #fff; font-family: 'Lilita One', sans-serif; font-size: 32px; text-shadow: 0 0 4.6px rgba(0, 0, 0, 0.25); -webkit-text-stroke: 1px rgba(0, 0, 0, 0.8); border: 1px solid rgba(0, 0, 0, 0.8); }
+      .nav-menu { display: flex; gap: 0; font-size: 16px; color: #000; text-align: center; }
+      .nav-item { font-family: Literata, sans-serif; padding: 14px 24px; box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25); background-color: #fff; }
+      .nav-item.active { background-color: #fff500; }
+      .main-content { display: flex; margin-top: 65px; width: 100%; flex-direction: column; padding: 0 71px; }
+      .content-grid { display: flex; gap: 20px; }
+      .sidebar { width: 21%; }
+      .highlight-section { border-radius: 10px; box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25); background-color: #fff; padding: 18px 12px; }
+      .section-title { font: 25px Literata, sans-serif; text-align: center; }
+      .divider { border-top: 1px solid #000; margin: 9px 0; }
+      .news-item { display: flex; gap: 11px; font-size: 13px; margin-top: 18px; }
+      .news-image { aspect-ratio: 1.15; width: 62px; }
+      .news-text { font-family: Literata, sans-serif; margin: auto 0; text-align: left; }
+      .main-article { width: auto; }
+      .featured-image { width: 100%; height: auto; border-radius: 10px; }
+      .featured-title { font-family: Dangrek, sans-serif; font-size: 40px; color: #fff; text-align: center; position: absolute; bottom: 23px; left: 21px; right: 21px; }
+      .about-me { width: 21%; border-radius: 10px; box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25); background-color: #fff; padding: 22px 23px 80px; text-align: center; }
+      .about-title { font: 40px Dangrek, sans-serif; }
+      .profile-image { aspect-ratio: 1.1; width: 216px; margin-top: 24px; filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.25)); }
+      .profile-name { font: 20px Dangrek, sans-serif; margin-top: 34px; }
+      .profile-id { font: 15px Dangrek, sans-serif; margin-top: 8px; }
+      .profile-department, .profile-university { font: 12px Dangrek, sans-serif; margin-top: 4px; }
+      .news-grid { display: flex; gap: 20px; margin-top: 25px; }
+      .news-column { width: 33%; }
+      .news-card { border-radius: 10px; box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25); background-color: #fff; padding: 18px 10px; margin-bottom: 34px; }
+      .news-card-image { width: 100%; height: auto; }
+      .news-card-title { font-family: Literata, sans-serif; font-size: 15px; margin-top: 19px; }
+      .footer { color: #878787; text-align: center; margin: 68px 0 0; font: 400 20px Alice, sans-serif; }
+      @media (max-width: 991px) {
+        .header { max-width: 100%; flex-wrap: wrap; padding: 0 20px; }
+        .nav-menu { flex-wrap: wrap; }
+        .nav-item { white-space: initial; padding: 0 20px; }
+        .main-content { max-width: 100%; margin-top: 40px; padding: 0 20px; }
+        .content-grid, .news-grid { flex-direction: column; }
+        .sidebar, .main-article, .about-me, .news-column { width: 100%; margin-left: 0; margin-top: 35px; }
+        .featured-title { padding: 20px 1px 0; }
+        .about-me { padding: 0 20px; }
+        .footer { margin-top: 40px; }
+      }
+      .visually-hidden {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        margin: -1px;
+        padding: 0;
+        overflow: hidden;
+        clip: rect(0, 0, 0, 0);
+        white-space: nowrap;
+        border: 0;
+      }
+      </style>
+      
+      <header class="header">
+        <div class="logo-container">
+          <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/db684dec3f5bdf02d8162a52e6dfb3d44ebcfaf2d7b67aada8255631556fb5c2?apiKey=b22aadffcd36496b9d3b15b51bb2abe4&" alt="Timnas Indonesia Logo" class="logo">
+          <h1 class="team-name">TIMNAS INDONESIA</h1>
+        </div>
+        <nav class="nav-menu">
+          <a href="index.html" class="nav-item active">NEWS</a>
+          <a href="pemain.html" class="nav-item">PEMAIN</a>
+          <a href="pelatih.html" class="nav-item">PELATIH</a>
+          <a href="kontak.html" class="nav-item">KONTAK</a>
+        </nav>
+      </header>
+      
+      <main class="main-content">
+        <div class="content-grid">
+          <aside class="sidebar">
+            <section class="highlight-section">
+              <h2 class="section-title">HIGHLIGHT</h2>
+              <hr class="divider">
+              <article class="news-item">
+                <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/1d1634ab2a8dd46bc4b57c8ec80b754d50e8fe74bb3a09941f7fb671f6b72b21?apiKey=b22aadffcd36496b9d3b15b51bb2abe4&" alt="Manchester United winger" class="news-image">
+                <p class="news-text">4 Winger yang Bisa Dibidik Manchester United jika...</p>
+              </article>
+              <article class="news-item">
+                <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/f8e8181ad42edcf6f2cea4804b750fdc25571ff23ff7da4b1d5f698aab3ed5e3?apiKey=b22aadffcd36496b9d3b15b51bb2abe4&" alt="Mo Salah replacement" class="news-image">
+                <p class="news-text">5 Pemain yang ideal untuk menggangtikan mo salah..</p>
+              </article>
+              <article class="news-item">
+                <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/a9f07123eed27d749f963401efe268038e0772b345ea5ffef6be69bc94c6530f?apiKey=b22aadffcd36496b9d3b15b51bb2abe4&" alt="Thiago Silva replacement" class="news-image">
+                <p class="news-text">5 Pemain yang Bisa Menggantikan Thiago Silva di Chelsea</p>
+              </article>
+              <article class="news-item">
+                <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/03c4962363211f8c33cff4ee286bef12b87dbca3f138be7f1fa32abe539fddea?apiKey=b22aadffcd36496b9d3b15b51bb2abe4&" alt="Arsenal players" class="news-image">
+                <p class="news-text">5 Pemain Arsenal yang Bisa Dijadikan Alat Tukar untuk</p>
+              </article>
+            </section>
+          </aside>
+      
+          <section class="main-article">
+            <article>
+              <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/27a04faef5d00182a3a6f7606081bdb5198e8a34f3a4a27053200026a155e757?apiKey=b22aadffcd36496b9d3b15b51bb2abe4&" alt="Marteen Paes becomes Indonesian citizen" class="featured-image">
+              <h2 class="featured-title">RESMI!!! Marteen Paes Jadi WNI</h2>
+            </article>
+          </section>
+      
+          <aside class="about-me">
+            <h2 class="about-title">ABOUT ME</h2>
+            <hr class="divider">
+            <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/0aff9ba478549d10cdb99575d554ca36acee1eeeb6b9089eed87cc6156da41fd?apiKey=b22aadffcd36496b9d3b15b51bb2abe4&" alt="Ersa Putra Riano profile picture" class="profile-image">
+            <p class="profile-name">ERSA PUTRA RIANO</p>
+            <p class="profile-id">2169700039</p>
+            <p class="profile-department">TEKNIK KOMPUTER DAN JARINGAN</p>
+            <p class="profile-university">UNIVERSITAS MANDIRI SUBANG</p>
+          </aside>
+        </div>
+      
+        <div class="news-grid">
+          <div class="news-column">
+            <article class="news-card">
+              <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/0917a9906fc749c1842257874aae080114ed19d9e867a84b57d59d82c1b26a52?apiKey=b22aadffcd36496b9d3b15b51bb2abe4&" alt="Vietnam media on Indonesia U-23 vs Uzbekistan match" class="news-card-image">
+              <h3 class="news-card-title">Media Vietnam: 3 Kali VAR Rugikan Timnas Indonesia U-23 Saat Lawan Uzbekistan,</h3>
+            </article>
+          </div>
+          <div class="news-column">
+            
+            <article class="news-card">
+              <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/7023c2247eeee26c5cef88c3b024c7d14fbac0172871e9be158e0b3662b035a4?apiKey=b22aadffcd36496b9d3b15b51bb2abe4&" alt="Bayern Munich and Real Madrid combined XI" class="news-card-image">
+              <h3 class="news-card-title">Starting XI Kombinasi Bayern Munchen dan Real Madrid: Jude Bellingham Jadi Supplier Assist Harry Kane!</h3>
+            </article>
+          </div>
+          <div class="news-column">
+            <article class="news-card">
+              <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/0917a9906fc749c1842257874aae080114ed19d9e867a84b57d59d82c1b26a52?apiKey=b22aadffcd36496b9d3b15b51bb2abe4&" alt="Vietnam media on Indonesia U-23 vs Uzbekistan match" class="news-card-image">
+              <h3 class="news-card-title">Media Vietnam: 3 Kali VAR Rugikan Timnas Indonesia U-23 Saat Lawan Uzbekistan,</h3>
+            </article>
+          </div>
+        </div>
+      </main>
+      
+      <footer class="footer">
+        <p>&copy; 2024 | Ersa Putra Riano</p>
+      </footer>

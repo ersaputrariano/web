@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <title>ERSA PUTRA RIANO</title>
+  </head>
+  <body>
+<style>
+    .player-list-section { background-color: #d4d4d4; display: flex; padding-bottom: 45px; flex-direction: column; align-items: center; font-weight: 400; }
+    .header { box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25); background-color: #f01818; align-self: stretch; display: flex; width: 100%; justify-content: space-between; padding: 8px 80px 8px 35px; }
+    @media (max-width: 991px) { .header { max-width: 100%; flex-wrap: wrap; padding: 0 20px; } }
+    .logo-container { display: flex; gap: 20px; font-size: 32px; color: #fff; line-height: 114%; }
+    .logo { aspect-ratio: 0.93; object-fit: auto; object-position: center; width: 53px; box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25); }
+    .team-name { text-shadow: 0 0 4.6px rgba(0, 0, 0, 0.25); -webkit-text-stroke: 1px rgba(0, 0, 0, 0.8); font-family: 'Lilita One', sans-serif; border: 1px solid rgba(0, 0, 0, 0.8); flex-grow: 1; margin: auto 0; }
+    .nav-menu { display: flex; gap: 0; font-size: 16px; color: #000; white-space: nowrap; text-align: center; margin: auto 0; }
+    @media (max-width: 991px) { .nav-menu { flex-wrap: wrap; white-space: initial; } }
+    .nav-item { font-family: Literata, sans-serif; justify-content: center; box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25); background-color: #fff; padding: 14px 32px; }
+    .nav-item.active { background-color: #fff500; }
+    @media (max-width: 991px) { .nav-item { white-space: initial; padding: 0 20px; } }
+    .section-title { color: #000; text-align: center; margin-top: 65px; font: 40px Dangrek, sans-serif; }
+    @media (max-width: 991px) { .section-title { margin-top: 40px; } }
+    .player-grid { display: flex; margin-top: 66px; width: 100%; max-width: 1276px; gap: 20px; font-size: 20px; color: #000; text-align: center; padding: 0 20px; }
+    @media (max-width: 991px) { .player-grid { max-width: 100%; flex-wrap: wrap; margin-top: 40px; } }
+    .player-card { border-radius: 10px; box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25); background-color: #fff; display: flex; flex-direction: column; flex: 2; padding: 19px 27px 54px; }
+    @media (max-width: 991px) { .player-card { padding: 0 20px; } }
+    .player-image { aspect-ratio: 1; object-fit: auto; object-position: center; width: 129px; border-radius: 50%; align-self: center; }
+    .player-name { font-family: Dangrek, sans-serif; margin-top: 28px; }
+    .footer { color: #878787; text-align: center; margin-top: 161px; font: 20px Alice, sans-serif; }
+    @media (max-width: 991px) { .footer { margin-top: 40px; } }
+    </style>
+    
+    <section class="player-list-section">
+      <header class="header">
+        <div class="logo-container">
+          <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/db684dec3f5bdf02d8162a52e6dfb3d44ebcfaf2d7b67aada8255631556fb5c2?apiKey=b22aadffcd36496b9d3b15b51bb2abe4&" alt="Timnas Indonesia Logo" class="logo" />
+          <h1 class="team-name">TIMNAS INDONESIA</h1>
+        </div>
+        <nav class="nav-menu">
+          <a href="index.html" class="nav-item">HOME</a>
+          <a href="pemain.html" class="nav-item active">PEMAIN</a>
+          <a href="pelatih.html" class="nav-item">PELATIH</a>
+          <a href="kontak.html" class="nav-item">KONTAK</a>
+        </nav>
+      </header>
+      
+      <h2 class="section-title">DAFTAR PEMAIN</h2>
+      
+      <div class="player-grid">
+        <article class="player-card">
+          <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/b7d0c05845e3cfdbe1d5c8bb71053dabb277056a68447af3405b0a10d91cb350?apiKey=b22aadffcd36496b9d3b15b51bb2abe4&" alt="Justin Hubner" class="player-image" />
+          <h3 class="player-name">JUSTIN HUBNER</h3>
+        </article>
+        <article class="player-card">
+          <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/74ee016a8f1df17bdd225a3d762032e27f5ce03feb3ea8f3fc7111fe67fa61fa?apiKey=b22aadffcd36496b9d3b15b51bb2abe4&" alt="Thom Haye" class="player-image" />
+          <h3 class="player-name">THOM HAYE</h3>
+        </article>
+        <article class="player-card">
+          <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/71f146b644dbc10c2d3248de7dc0dc8f887853999eec7524227328d8df19fb4a?apiKey=b22aadffcd36496b9d3b15b51bb2abe4&" alt="Elkan Baggot" class="player-image" />
+          <h3 class="player-name">ELKAN BAGGOT</h3>
+        </article>
+        <article class="player-card">
+          <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/9fadf5e7450202f6586d7b4beece06514f02bb7cbf56ba13af93d3f79a47d101?apiKey=b22aadffcd36496b9d3b15b51bb2abe4&" alt="Rafael Struick" class="player-image" />
+          <h3 class="player-name">RAFAEL STRUICK</h3>
+        </article>
+        <article class="player-card">
+          <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/57e68a6cb3a2139b1677779193012f7784c2fa245b035bc6f7780f2a54f14149?apiKey=b22aadffcd36496b9d3b15b51bb2abe4&" alt="Marselino" class="player-image" />
+          <h3 class="player-name">MARSELINO</h3>
+        </article>
+        <article class="player-card">
+          <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/9b6ceff50514f7f090e7b3c6210f8e6d211031e9a941647912d268bee88493c7?apiKey=b22aadffcd36496b9d3b15b51bb2abe4&" alt="Jay Idzes" class="player-image" />
+          <h3 class="player-name">JAY IDZES</h3>
+        </article>
+      </div>
+      
+      <div class="player-grid">
+        <article class="player-card">
+          <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/fca77972392a94bc941f0ee169b4c27bf24c473cd4b4d1db4cf0d5917379f366?apiKey=b22aadffcd36496b9d3b15b51bb2abe4&" alt="Arhan Pratama" class="player-image" />
+          <h3 class="player-name">ARHAN PRATAMA</h3>
+        </article>
+        <article class="player-card">
+          <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/5b2f5acd719fb8e87ccaa1985b475fd1453a29665d040364aa864494f50f2c2e?apiKey=b22aadffcd36496b9d3b15b51bb2abe4&" alt="Ivar Jener" class="player-image" />
+          <h3 class="player-name">IVAR JENER</h3>
+        </article>
+        <article class="player-card">
+          <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/0dbbd5655ec0697c2d56939fabf3deda18a1d69ed4fcbe7a3eb855cb9a6fb66b?apiKey=b22aadffcd36496b9d3b15b51bb2abe4&" alt="Nathan Tjoe An" class="player-image" />
+          <h3 class="player-name">NATHAN TJOE AN</h3>
+        </article>
+        <article class="player-card">
+          <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/477065df9c83c6a9c3e967c6156aea2a370c5a52c9008e597286f10571640f41?apiKey=b22aadffcd36496b9d3b15b51bb2abe4&" alt="Shayne Pattynama" class="player-image" />
+          <h3 class="player-name">SHAYNE PATTYNAMA</h3>
+        </article>
+        <article class="player-card">
+          <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/5349422e0532a0524086f02fa875cf782b2c1a3d3f978597384d7c148e59ae53?apiKey=b22aadffcd36496b9d3b15b51bb2abe4&" alt="Fachrudin" class="player-image" />
+          <h3 class="player-name">FACHRUDIN</h3>
+        </article>
+      </div>
+      
+      <footer class="footer">@Copyright 2024 | Ersa Putra Riano</footer>
+    </section>
